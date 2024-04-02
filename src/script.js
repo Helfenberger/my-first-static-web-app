@@ -53,9 +53,9 @@
     }
 
     function updateUI() {
-        document.getElementById('player-cards').innerHTML = playerCards.map(card => `<div class="card"><img src="cards/${card}.png" alt="${card}"></div>`).join('');
+        document.getElementById('player-cards').innerHTML = playerCards.map(card => `<div class="card"><img src="${card}.png" alt="${card}"></div>`).join('');
         document.getElementById('player-score').textContent = `: ${playerScore}`;
-        document.getElementById('dealer-cards').innerHTML = dealerCards.map(card => `<div class="card"><img src="cards/${card}.png" alt="${card}"></div>`).join('');
+        document.getElementById('dealer-cards').innerHTML = dealerCards.map(card => `<div class="card"><img src="${card}.png" alt="${card}"></div>`).join('');
         document.getElementById('dealer-score').textContent = `: ${dealerScore}`;
         document.getElementById('bank').textContent = `Bank: $${bank}`;
     }
